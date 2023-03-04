@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="houses">
+
+    <form action="{% url 'mainapp:list_houses' %}" method="get">
+        <input class="findHouse" name="q" type="text" placeholder="Найди дом...">
+    </form>
+    {% for item in object_list %}
+    <div class="address_work">
+        <br>
+        <div> Что ходил: <b>{{item.address.street.name_street}} {{item.address.number_of_house}} </b>
+            <div> Кто ходил: {{item.user.username}} </div>
+            <div> Когда ходил: <b> {{item.created_at|date}} </b>
+                {% if item.photo %}
+                <a href="{{ item.photo.url }}" class="lightzoom "><img class="photo col-3 text-right"
+                        src="{{ item.photo.url }}"> </a>
+
+                {% endif %}
+            </div>
+            {% endfor %}
+
+        </div>
+
+
+        <div class="kambala"> <img src="{% static 'img/kambala.jpeg' %}"></div>
+
+        {% endblock content %}

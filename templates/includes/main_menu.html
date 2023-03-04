@@ -1,0 +1,63 @@
+{% load static %}
+<nav class="menuu navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="{% url 'mainapp:main_page' %}">
+      <img src="{% static 'img/logo.png' %}" alt="">
+    </a>
+    <button class="button-menu navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item {% if request.resolver_match.view_name == 'mainapp:main_page' %}active{% endif %}">
+          <a class="nav-link" href="{% url 'mainapp:main_page' %}"> <b> На главную </b> </a>
+        </li>
+        <li class="nav-item {% if request.resolver_match.view_name == 'mainapp:padiki' %}active{% endif %}">
+          <a class="nav-link" href="{% url 'mainapp:padiki' %}"> Разборки в подъездах </a>
+        </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item {% if request.resolver_match.view_name == 'mainapp:support' %}active{% endif %}">
+          <a class="nav-link" href="{% url 'mainapp:support' %}"> Техническая поддержка </a>
+        </li>
+        {% endif %}
+        {% if user.is_authenticated %}
+        <li class="nav-item {% if request.resolver_match.view_name == 'mainapp:add' %}active{% endif %}">
+          <a class="nav-link" href="{% url 'mainapp:add' %}"> Добавить дом </a>
+        </li>
+        <li class="nav-item {% if request.resolver_match.view_name == 'mainapp:list_houses' %}active{% endif %}">
+          <a class="nav-link" href="{% url 'mainapp:list_houses' %}"> Список домов </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="ddProfile" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Профиль
+          </a>
+          <div class="dropdown-menu" aria-labelledby="ddProfile">
+            <a class="dropdown-item" href="{% url 'authapp:profile_edit' pk=request.user.pk %}">Редактировать
+              профиль</a>
+            <a class="dropdown-item" href="{% url 'mainapp:add' %}">Фотки листовок</a>
+            <div class="dropdown-divider"></div>
+            {% if user.is_superuser %}
+            <a class="dropdown-item" href="{% url 'admin:index' %}" target="_blank">Административный
+              раздел</a>
+            <a class="dropdown-item" href="{% url 'mainapp:log' %}" {% endif %}> Лог</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{% url 'authapp:logout' %}">Выход</a>
+          </div>
+        </li>
+
+
+        {% else %}
+        <li class="nav-item {% if request.resolver_match.view_name == 'authapp:login' %}active{% endif %}">
+          <a class="nav-link" href="{% url 'authapp:login' %}">Войди чтоб видеть дома</a>
+        </li>
+        {% endif %}
+
+      </ul>
+      <span><a href="#">🇷🇺</a> <i class="fas fa-grip-lines-vertical"></i> <a href="#">🇬🇧</a></span>
+    </div>
+  </div>
+</nav>

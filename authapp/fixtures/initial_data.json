@@ -1,0 +1,82 @@
+[
+    {
+        "model": "authapp.customuser",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$gfOhQcu4gvvC7AZh7hj90N$1makGL3/pQpXItMaKVDdCvinCocazLlPLzfHBjVO2F4=",
+            "last_login": "2023-01-05T15:02:28.929Z",
+            "is_superuser": false,
+            "username": "s",
+            "first_name": "s",
+            "last_name": "s",
+            "age": 12,
+            "avatar": "",
+            "email": "s",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-01-05T15:01:26.208Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "authapp.customuser",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$8j1Yjsb81aiaNRaXsVo9wb$QSPHP0FzT861LOcy4OLBl0CM4JFAZQdXow/v8rvmvnQ=",
+            "last_login": "2023-01-15T13:48:32.660Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "age": null,
+            "avatar": "",
+            "email": "loginadanil.ru@mail.ru",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-01-11T11:54:18.970Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "authapp.customuser",
+        "pk": 3,
+        "fields": {
+            "password": "!dcFjDdQJcOk2OnQ5wrL1bB04VWs9id5hC8fObsmi",
+            "last_login": "2023-01-22T11:34:37.203Z",
+            "is_superuser": false,
+            "username": "id43714268",
+            "first_name": "Данил",
+            "last_name": "Гущин",
+            "age": null,
+            "avatar": "",
+            "email": "romanov_73_73@mail.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-01-17T13:44:46.370Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "authapp.customuser",
+        "pk": 4,
+        "fields": {
+            "password": "pbkdf2_sha256$260000$UiQT0aRRVHDu0nlN4mbBcL$mnMn/nHm/7rA+TlV9XH0j3Js3wuOT0qUNiUFR6Z3Id4=",
+            "last_login": "2023-01-22T11:36:33.953Z",
+            "is_superuser": false,
+            "username": "ad",
+            "first_name": "",
+            "last_name": "",
+            "age": 0,
+            "avatar": "",
+            "email": "l@mail.ru",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-01-22T11:36:27.577Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    }
+]

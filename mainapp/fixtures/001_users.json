@@ -1,0 +1,57 @@
+[
+    {
+        "model": "mainapp.users",
+        "pk": 1,
+        "fields": {
+            "name": "Danil",
+            "login": "danil@mail.ru",
+            "password": "14",
+            "updated_at": "2022-12-25T05:19:08.991Z",
+            "created_at": "2022-12-25T04:15:37.760Z"
+        }
+    },
+    {
+        "model": "mainapp.users",
+        "pk": 2,
+        "fields": {
+            "name": "",
+            "login": "dd",
+            "password": "ds",
+            "updated_at": "2022-12-25T04:19:05.399Z",
+            "created_at": "2022-12-25T04:19:05.399Z"
+        }
+    },
+    {
+        "model": "mainapp.users",
+        "pk": 3,
+        "fields": {
+            "name": "kolya",
+            "login": "lld",
+            "password": "wqds",
+            "updated_at": "2022-12-25T04:23:27.053Z",
+            "created_at": "2022-12-25T04:23:27.053Z"
+        }
+    },
+    {
+        "model": "mainapp.users",
+        "pk": 4,
+        "fields": {
+            "name": "Danidddl",
+            "login": "login",
+            "password": "14",
+            "updated_at": "2022-12-25T04:25:56.856Z",
+            "created_at": "2022-12-25T04:25:56.856Z"
+        }
+    },
+    {
+        "model": "mainapp.users",
+        "pk": 5,
+        "fields": {
+            "name": "Ivan",
+            "login": "ld",
+            "password": "gd",
+            "updated_at": "2022-12-25T05:23:15.607Z",
+            "created_at": "2022-12-25T05:23:15.607Z"
+        }
+    }
+]
