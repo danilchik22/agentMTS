@@ -17,6 +17,9 @@ def photo_house(instance, filename):
 
 
 class Street(models.Model):
+    """
+    Модель для создания улиц
+    """
     name_street = models.CharField(
         unique=True, max_length=100, verbose_name="name_street"
     )
@@ -26,6 +29,10 @@ class Street(models.Model):
 
 
 class Address(models.Model):
+    """
+    Модель для создания адресов. Адрес состоит из трех полей: id адреса,
+    улица адреса и номер дома. Работаем по одному городу.
+    """
     number_of_house = models.CharField(
         max_length=10, verbose_name="number_of_house")
     street = models.ForeignKey(Street, on_delete=models.CASCADE)
@@ -39,6 +46,9 @@ class Address(models.Model):
 
 
 class Work(models.Model):
+    """
+    Модель для создания 1го рабочего прохода.
+    """
     user = models.ForeignKey(modUs.CustomUser, on_delete=models.CASCADE)
     address = models.ForeignKey(Address, on_delete=models.CASCADE)
     created_at = models.DateTimeField(

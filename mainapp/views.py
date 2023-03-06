@@ -36,14 +36,24 @@ class MainPageView(TemplateView):
 
 
 class ListHousePage(ListView):
+    """
+    Контроллер вывода списка пройденных домов.
+    """
+
     model = mainapp_models.Work
     paginate_by = 20
 
-    def get_queryset(self):  # новый
+    def get_queryset(self):
+        """
+        Измененный get_queryset для того чтобы отсеять удаленные рабочие листы,
+        и также выводить рабочие листы, которые в названии улицы содержат 
+        введенное значение.
+        """
         query = self.request.GET.get("q")
         if query is not None:
             object_list = mainapp_models.Work.objects.filter(
-                Q(address__street__name_street__icontains=query) & Q(is_deleted=False)
+                Q(address__street__name_street__icontains=query) & Q(
+                    is_deleted=False)
             ).order_by("-created_at")
         else:
             object_list = mainapp_models.Work.objects.all().order_by("-created_at")
@@ -51,11 +61,18 @@ class ListHousePage(ListView):
 
 
 class AddHousePage(LoginRequiredMixin, CreateView):
+    """
+    Контролер добавления новых рабочих листов
+    """
     model = mainapp_models.Work
     form_class = CreateWorkForm
     success_url = reverse_lazy("mainapp:add")
 
     def form_valid(self, form):
+        """
+        Кастомный метод для добавления в форму пользователя, который отправил
+        запрос.       
+        """
         new_house = form.save(commit=False)
         new_house.user = self.request.user
         new_house.save()
@@ -90,6 +107,9 @@ class LogDownloadView(UserPassesTestMixin, View):
 
 
 class SupportView(TemplateView):
+    """
+    Контроллер для отправки сообщения в техническую поддержку.
+    """
     template_name = "mainapp/support.html"
 
     def get_context_data(self, success=0, **kwargs: Any):
@@ -101,14 +121,16 @@ class SupportView(TemplateView):
 
     def post(self, *args, **kwargs):
         if self.request.user.is_authenticated:
-            cache_lock_flag = cache.get(f"mail_feedback_lock_{self.request.user.pk}")
+            cache_lock_flag = cache.get(
+                f"mail_feedback_lock_{self.request.user.pk}")
             if not cache_lock_flag:
                 cache.set(
                     f"mail_feedback_lock_{self.request.user.pk}",
                     "lock",
                     timeout=300,
                 )
-                messages.add_message(self.request, messages.INFO, _("Message sended"))
+                messages.add_message(
+                    self.request, messages.INFO, _("Message sended"))
                 mainapp_tasks.send_feedback_mail.delay(
                     {
                         "id_from": self.request.POST.get("id_from"),

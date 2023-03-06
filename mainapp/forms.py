@@ -36,14 +36,10 @@ class SupportForm(forms.Form):
         if user:
             self.fields["id_from"].initial = user.pk
 
-    def send_message(self):
-        self.send_message_to_mail()
-        print("Привет")
-
     def send_message_to_mobile(self):
+        """
+        Функция для отправки сообщения на мобильный номер телефона.
+        """
         msg = f'От кого: {self.cleaned_data["id_from"]}. Сообщение: {self.cleaned_data["message"]}'
         sms_api = f"https://sms.ru/sms/send?api_id=9501034C-74AE-EEFB-1C8B-E2998518C53E&to=79236508766,79132106042,79132408203,79132172595,79612404234&msg={msg}&json=1"
         res = requests.get(sms_api)
-
-    def send_message_to_mail(self):
-        pass
