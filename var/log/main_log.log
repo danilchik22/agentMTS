@@ -3843,3 +3843,72 @@ smtplib.SMTPRecipientsRefused: {'loginadanil.ru@mail.ru': (501, b'sender address
 [2023-03-04 15:38:11,770] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
 [2023-03-04 15:38:11,944] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
 [2023-03-04 15:38:11,975] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:32:50,765] INFO django.utils.autoreload (637) Watching for file changes with StatReloader
+[2023-03-08 15:33:06,746] INFO django.server (161) "GET / HTTP/1.1" 302 0
+[2023-03-08 15:33:07,221] INFO django.server (161) "GET /mainapp/ HTTP/1.1" 200 5158
+[2023-03-08 15:33:07,415] INFO django.server (161) "GET /static/css/Chart.min.css HTTP/1.1" 200 521
+[2023-03-08 15:33:07,431] INFO django.server (161) "GET /static/css/fontawesome.all.min.css HTTP/1.1" 200 59344
+[2023-03-08 15:33:07,471] INFO django.server (161) "GET /static/css/my.css HTTP/1.1" 200 1716
+[2023-03-08 15:33:07,494] INFO django.server (161) "GET /static/css/bootstrap.min.css HTTP/1.1" 200 167943
+[2023-03-08 15:33:07,773] INFO django.server (161) "GET /static/img/agent07.jpeg HTTP/1.1" 200 93346
+[2023-03-08 15:33:07,914] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:33:07,924] INFO django.server (161) "GET /static/css/style.css HTTP/1.1" 200 3107
+[2023-03-08 15:33:08,407] INFO django.server (161) "GET /static/js/popper.min.js HTTP/1.1" 304 0
+[2023-03-08 15:33:08,827] INFO django.server (161) "GET /static/js/lightzoom.js HTTP/1.1" 304 0
+[2023-03-08 15:33:08,914] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:33:09,076] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:33:09,184] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:33:09,733] WARNING django.request (224) Not Found: /favicon.ico
+[2023-03-08 15:35:31,512] INFO django.server (161) "GET /mainapp/ HTTP/1.1" 200 5227
+[2023-03-08 15:35:31,612] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:35:31,636] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:35:31,679] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:35:31,694] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:35:32,917] WARNING django.request (224) Not Found: /favicon.ico
+[2023-03-08 15:35:41,974] INFO django.server (161) "GET /mainapp/ HTTP/1.1" 200 5232
+[2023-03-08 15:35:42,066] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:35:42,107] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:35:42,222] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:35:42,244] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:36:32,928] INFO django.server (161) "GET /mainapp/ HTTP/1.1" 200 5218
+[2023-03-08 15:36:33,006] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:36:33,063] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:36:33,171] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:36:33,202] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:36:37,208] INFO django.server (161) "GET /authapp/profile_edit/4/ HTTP/1.1" 200 7796
+[2023-03-08 15:36:37,318] WARNING django.request (224) Not Found: /media/avatar_default.svg
+[2023-03-08 15:36:37,319] WARNING django.server (161) "GET /media/avatar_default.svg HTTP/1.1" 404 2932
+[2023-03-08 15:36:37,331] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:36:37,340] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:36:37,562] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:36:37,728] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:36:37,744] WARNING django.request (224) Not Found: /favicon.ico
+[2023-03-08 15:36:37,748] WARNING django.server (161) "GET /favicon.ico HTTP/1.1" 404 2664
+[2023-03-08 15:36:40,769] INFO django.server (161) "GET /mainapp/list_houses/ HTTP/1.1" 200 5408
+[2023-03-08 15:36:40,999] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:36:41,008] INFO django.server (161) "GET /static/img/kambala.jpeg HTTP/1.1" 200 79405
+[2023-03-08 15:36:41,014] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:36:41,140] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:36:41,211] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:36:59,278] INFO django.server (161) "GET /mainapp/addhouse/ HTTP/1.1" 200 56499
+[2023-03-08 15:36:59,423] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:36:59,439] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:36:59,563] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:36:59,632] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:37:07,724] INFO django.server (161) "GET /mainapp/support/ HTTP/1.1" 200 6242
+[2023-03-08 15:37:07,842] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:37:07,872] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:37:07,996] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:37:08,011] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:37:09,139] INFO django.server (161) "GET /mainapp/padiki/ HTTP/1.1" 200 5372
+[2023-03-08 15:37:09,299] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:37:09,301] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:37:09,381] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:37:09,395] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:37:10,919] WARNING django.request (224) Not Found: /favicon.ico
+[2023-03-08 15:37:19,938] INFO django.server (161) "GET /mainapp/ HTTP/1.1" 200 5218
+[2023-03-08 15:37:20,171] WARNING django.server (161) "GET /static/img/logo.png HTTP/1.1" 404 1795
+[2023-03-08 15:37:20,208] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff2 HTTP/1.1" 404 1840
+[2023-03-08 15:37:20,564] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.woff HTTP/1.1" 404 1837
+[2023-03-08 15:37:20,621] WARNING django.server (161) "GET /static/webfonts/fa-solid-900.ttf HTTP/1.1" 404 1834
+[2023-03-08 15:37:20,655] WARNING django.request (224) Not Found: /favicon.ico

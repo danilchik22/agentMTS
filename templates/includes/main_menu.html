@@ -16,7 +16,7 @@
           <a class="nav-link" href="{% url 'mainapp:main_page' %}"> <b> На главную </b> </a>
         </li>
         <li class="nav-item {% if request.resolver_match.view_name == 'mainapp:padiki' %}active{% endif %}">
-          <a class="nav-link" href="{% url 'mainapp:padiki' %}"> Разборки в подъездах </a>
+          <a class="nav-link" href="{% url 'mainapp:padiki' %}"> Видео с полей </a>
         </li>
         {% if user.is_authenticated %}
         <li class="nav-item {% if request.resolver_match.view_name == 'mainapp:support' %}active{% endif %}">
